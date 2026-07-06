@@ -9,13 +9,13 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 484a0547078228f6957ed164523823e39fbedec4
       import: app/west.yml
     - name: zmk-raw-hid # <-- Raw HID module
       remote: zzeneg
-      revision: main
+      revision: e25e325adc90fccb60cc08393b8c2b0ba6d647c7
     - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
       remote: srwi
-      revision: master
+      revision: b600af3bb7d1795073a4ce23e08d6db46371551b
   self:
     path: config
