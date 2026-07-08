@@ -34,6 +34,9 @@ parse_config:
     "&msc SCRL_DOWN": "Scrl↓"
     "&msc SCRL_LEFT": "Scrl←"
     "&msc SCRL_RIGHT": "Scrl→"
+    "&mkp MB1": "Click"
+    "&mkp MB2": "RClick"
+    "&mkp MB3": "MClick"
 
 draw_config:
   key_h: 56
