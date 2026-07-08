@@ -27,6 +27,7 @@ MIRYOKU_LAYER_LIST
 };
 
 #include "miryoku_shift_functions.dtsi"
+#include "miryoku_display_names.dtsi"
 
 #include "miryoku_double_tap_guard.dtsi"
 

@@ -1,0 +1,27 @@
+// Display names for Miryoku custom behaviors (shown in ZMK Studio / KeyPeek)
+
+/ {
+  behaviors {
+    u_bt_sel_0  { display-name = "BT 0"; };
+    u_bt_sel_1  { display-name = "BT 1"; };
+    u_bt_sel_2  { display-name = "BT 2"; };
+    u_bt_sel_3  { display-name = "BT 3"; };
+    u_out_tog   { display-name = "Out Tog"; };
+    u_caps_word { display-name = "Caps Word"; };
+    u_bootloader { display-name = "Boot"; };
+    u_to_U_BASE   { display-name = "Base"; };
+    u_to_U_EXTRA  { display-name = "Extra"; };
+    u_to_U_TAP    { display-name = "Tap"; };
+    u_to_U_BUTTON { display-name = "Button"; };
+    u_to_U_NAV    { display-name = "Nav"; };
+    u_to_U_MOUSE  { display-name = "Mouse"; };
+    u_to_U_MEDIA  { display-name = "Media"; };
+    u_to_U_NUM    { display-name = "Num"; };
+    u_to_U_SYM    { display-name = "Sym"; };
+    u_to_U_FUN    { display-name = "Fun"; };
+  };
+};
+
+&mmv { display-name = "Mouse Move"; };
+&msc { display-name = "Mouse Scroll"; };
+&mkp { display-name = "Mouse Button"; };
