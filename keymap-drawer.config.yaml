@@ -7,7 +7,3 @@ draw_config:
   key_w: 56
   split_gap: 30
 
-layout:
-  qmk_keyboard: totem
-  cols_thumbs_notation: "55_33"
-  split: true
