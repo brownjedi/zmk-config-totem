@@ -1,6 +1,19 @@
 parse_config:
   zmk_additional_includes:
     - config/miryoku
+  raw_binding_map:
+    "&u_to_U_BASE": "Base"
+    "&u_to_U_EXTRA": "Extra"
+    "&u_to_U_TAP": "Tap"
+    "&u_to_U_BUTTON": "Button"
+    "&u_to_U_NAV": "Nav"
+    "&u_to_U_MOUSE": "Mouse"
+    "&u_to_U_MEDIA": "Media"
+    "&u_to_U_NUM": "Num"
+    "&u_to_U_SYM": "Sym"
+    "&u_to_U_FUN": "Fun"
+    "&u_bootloader": "Boot"
+    "&bootloader": "Boot"
 
 draw_config:
   key_h: 56
