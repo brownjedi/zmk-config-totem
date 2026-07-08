@@ -1,0 +1,38 @@
+name: Draw keymap
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Parse keymap
+        run: keymap -c keymap-drawer.config.yaml parse --zmk-keymap config/totem.keymap -o keymap.yaml
+
+      - name: Draw keymap
+        run: |
+          mkdir -p docs
+          keymap -c keymap-drawer.config.yaml draw keymap.yaml -o docs/keymap.svg
+
+      - name: Commit SVG
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: update keymap diagram"
+          file_pattern: docs/keymap.svg
