@@ -2,7 +2,7 @@ name: Draw keymap
 
 on:
   push:
-    branches: [feat/add-strdy]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
